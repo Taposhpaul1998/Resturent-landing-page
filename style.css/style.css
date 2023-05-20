@@ -36,6 +36,17 @@ section {
     padding: 2rem 9%;
 }
 
+.heading {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #666;
+}
+
+.heading span {
+    color: var(--red);
+}
+
 .btn {
     display: inline-block;
     padding: .8rem 3rem;
@@ -162,6 +173,74 @@ header .navbar a:hover {
     color: #666;
     padding: 1rem 0;
 }
+
+.speciality .box-continer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.speciality .box-continer .box {
+    flex: 1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.speciality .box-continer .box .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+
+.speciality .box-continer .box .content {
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+}
+
+.speciality .box-continer .box .content img {
+    width: 5rem;
+    margin: 1.5rem;
+}
+
+.speciality .box-continer .box .content h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.speciality .box-continer .box .content p {
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.speciality .box-continer .box:hover .image {
+    top: 0;
+}
+
+.speciality .box-continer .box:hover .content {
+    transform: translateY(100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
